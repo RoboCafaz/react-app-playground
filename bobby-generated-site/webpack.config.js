@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -15,4 +16,13 @@ module.exports = {
     // File to bundle all code into
     filename: "main.js",
   },
+  // Plugin configurations
+  plugins: [
+    // Html plugin will serve up static html pages and inject
+    //   our code into them.
+    new HtmlWebpackPlugin({
+      // By default, "template" is used for the root index
+      template: "./src/index.html",
+    }),
+  ],
 };
