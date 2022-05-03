@@ -1,16 +1,16 @@
 # Bobby's Cool App
 
-This app writes "hello world" to the console.
+This web app serves up a page that says "hello world"
 
 ## Building the App
 
 Run `yarn build`. This will copy the Javascript code
-to the output directory.
+and static assets to the output directory.
 
 ## Running the App
 
 Run `yarn start`. This will use `node` to run the
-Javascript code.
+website?
 
 ## Testing the App
 
