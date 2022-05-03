@@ -21,6 +21,17 @@ module.exports = {
     // Individual file handling rules
     rules: [
       {
+        // Use "file-loader" to load various assets
+        // By default, this will copy all matching
+        //   files to the build output directory and
+        //   serve them up as static assets.
+        // Any references to these file in code will
+        //   be replaced with a string containing
+        //   the absolute path to that static asset.
+        test: /.jpg$/,
+        use: "file-loader",
+      },
+      {
         // Use babel to load all .js files
         test: /.js$/,
         use: "babel-loader",
