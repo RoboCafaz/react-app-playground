@@ -2,5 +2,9 @@
   "name": "bobby-generated-site",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && cp -r ./src ./build",
+    "start": "yarn build && node ./build/index.js"
+  }
 }
