@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: #223366;
+  color: #11aaff;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+img {
+  width: 480px;
+  margin: 120px;
+}
+
+.spin {
+  animation: spin infinite 10s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

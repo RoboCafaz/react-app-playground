@@ -1,7 +1,8 @@
 # Bobby's Cool App
 
-This web app serves up a React app that shows a
-picture of my cat and says "Hello React World!"
+This web app serves up a React app with some cool
+CSS that shows a spinning picture of my cat and
+says "Hello React World!"
 
 ## Building the App
 

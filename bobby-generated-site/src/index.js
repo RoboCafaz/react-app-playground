@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import mollyPic from "./assets/molly.jpg";
+import styleSheet from "./assets/style.css";
 
 // Create the root React element in the "root" div on the page.
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // Render our React app.
 root.render(
   <div>
-    <img src={mollyPic} />
+    <link rel="stylesheet" href={styleSheet} />
+    <img className="spin" src={mollyPic} />
+    <br />
+    <br />
     Hello React world!
   </div>
 );

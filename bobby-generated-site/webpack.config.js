@@ -28,7 +28,7 @@ module.exports = {
         // Any references to these file in code will
         //   be replaced with a string containing
         //   the absolute path to that static asset.
-        test: /.jpg$/,
+        test: /.(jpg|.css)$/,
         use: "file-loader",
       },
       {
