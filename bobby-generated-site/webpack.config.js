@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         // Use babel to load all .js files
-        test: /.js$/,
+        test: /.(j|t)s(x?)$/,
         use: "babel-loader",
       },
     ],
@@ -47,4 +47,9 @@ module.exports = {
       template: "./src/assets/index.html",
     }),
   ],
+  // What files to load
+  resolve: {
+    // Load all files that have the following extensions
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+  },
 };

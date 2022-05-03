@@ -3,10 +3,10 @@
  *   they would likely make if you approached
  *   them.
  *
- * @param {*} cat - name of cat you want to harass
+ * @param cat - name of cat you want to harass
  * @returns string containing the cat noise.
  */
-export const makeCatNoise = (cat) => {
+export const makeCatNoise = (cat: string) => {
   switch (cat) {
     case "molly":
       return "meow";

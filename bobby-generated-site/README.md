@@ -9,7 +9,7 @@ lets you see what other noises my other cats make!
 Run `yarn build`. This will use webpack to bundle the
 website and code into a deployable web package.
 
-We leverage `babel` to transpile our Javascript code
+We leverage `babel` to transpile our Typescript code
 to something consumable by a web browser.
 
 We leverage `file-loader` to replace references to

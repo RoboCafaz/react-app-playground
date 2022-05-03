@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Transpile tsx files */
+    "jsx": "react",
+    /* Transpiel code to commonjs */
+    "module": "commonjs",
+    /* Use nodejs's module resolution strategy */
+    "moduleResolution": "node",
+    /* Support the latest ECMAScript features */
+    "target": "esnext",
+    /* Transpile to the "build" directory */
+    "outDir": "build",
+    /* Transpile code in the 'src' folder */
+    "rootDir": "./src",
+    /* Allow JSON files to be treated like modules */
+    "resolveJsonModule": true,
+    /* Enable strict type-checking options */
+    "strict": true,
+    /* Also support raw javascript */
+    "allowJs": true,
+    /* Automatically assume the default export types
+       of module without default exports */
+    "allowSyntheticDefaultImports": true,
+    /* Do not type-check node_modules */
+    "skipLibCheck": true
+  },
+  /* Folders to reference when transpiling */
+  "include": ["./src/**/*", "./types/**/*"],
+  /* Folders to exclude when transpiling */
+  "exclude": ["node_modules", "./build"]
+}

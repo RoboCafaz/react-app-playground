@@ -2,6 +2,8 @@ module.exports = {
   // Load files with these extensions as modules
   moduleFileExtensions: [
     // Exact matches
+    "ts",
+    "tsx",
     "js",
     "jsx",
   ],
@@ -9,11 +11,11 @@ module.exports = {
   //   be unit test files.
   testMatch: [
     // Glob Patterns
-    "**/__tests__/**.test.(js|jsx)",
+    "**/__tests__/**.test.(ts|tsx|js|jsx)",
   ],
   // Which loaders to use for which file patterns
   transform: {
     // Regex patterns
-    "\\.js(x?)$": "babel-jest",
+    "\\.[tj]s(x?)$": "babel-jest",
   },
 };
