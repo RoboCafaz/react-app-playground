@@ -2,7 +2,7 @@
 
 This web app serves up a React app with some cool
 CSS that shows a spinning picture of my cat and
-says "Hello React World!"
+lets you see what other noises my other cats make!
 
 ## Building the App
 
@@ -26,4 +26,8 @@ serve up the website.
 
 ## Testing the App
 
-What are tests?
+Run `yarn test`. This will run all the unit tests in
+the suite.
+
+We leverage `babel-jest` to transpile the tests and
+their associated modules.
