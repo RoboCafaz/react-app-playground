@@ -16,6 +16,17 @@ module.exports = {
     // File to bundle all code into
     filename: "main.js",
   },
+  // Module transpilation configurations
+  module: {
+    // Individual file handling rules
+    rules: [
+      {
+        // Use babel to load all .js files
+        test: /.js$/,
+        use: "babel-loader",
+      },
+    ],
+  },
   // Plugin configurations
   plugins: [
     // Html plugin will serve up static html pages and inject

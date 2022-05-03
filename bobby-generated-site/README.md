@@ -8,8 +8,11 @@ React World!"
 Run `yarn build`. This will use webpack to bundle the
 website and code into a deployable web package.
 
+We leverage `babel` to transpile our Javascript code
+to something consumable by a web browser.
+
 We leverage `html-webpack-plugin` to serve up an HTML
-page that will run our React app?
+page that will run our React app.
 
 ## Running the App
 
