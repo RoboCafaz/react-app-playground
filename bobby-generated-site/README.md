@@ -1,7 +1,7 @@
 # Bobby's Cool App
 
-This web app serves up a React app that says "Hello
-React World!"
+This web app serves up a React app that shows a
+picture of my cat and says "Hello React World!"
 
 ## Building the App
 
@@ -9,7 +9,7 @@ Run `yarn build`. This will use webpack to bundle the
 website and code into a deployable web package.
 
 We leverage `babel` to transpile our Javascript code
-to something consumable by a web browser.
+to something consumable by a web browser?
 
 We leverage `html-webpack-plugin` to serve up an HTML
 page that will run our React app.

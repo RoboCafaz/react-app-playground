@@ -33,7 +33,7 @@ module.exports = {
     //   our code into them.
     new HtmlWebpackPlugin({
       // By default, "template" is used for the root index
-      template: "./src/index.html",
+      template: "./src/assets/index.html",
     }),
   ],
 };
