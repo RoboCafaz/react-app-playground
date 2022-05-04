@@ -16,6 +16,9 @@ We leverage `file-loader` to replace references to
 static assets in code with what will ultimately be
 their static file paths when the site is bundled.
 
+We leverage `favicons-webpack-plugin` to serve up the
+favicons for the page.
+
 We leverage `html-webpack-plugin` to serve up an HTML
 page that will run our React app.
 

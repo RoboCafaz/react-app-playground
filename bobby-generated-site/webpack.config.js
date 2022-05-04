@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const FaviconsWebpackPLugin = require("favicons-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -46,6 +47,9 @@ module.exports = {
       // By default, "template" is used for the root index
       template: "./src/assets/index.html",
     }),
+    // Favicons plugin will serve up the given image as the
+    //   site's favicon.
+    new FaviconsWebpackPLugin(path.join(__dirname, "./src/assets/favicon.png")),
   ],
   // What files to load
   resolve: {
