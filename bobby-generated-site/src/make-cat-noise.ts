@@ -8,13 +8,13 @@
  */
 export const makeCatNoise = (cat: string) => {
   switch (cat) {
-    case "molly":
-      return "meow";
-    case "mousse":
-      return "...";
-    case "oscar":
-      return "MOWWWW";
+    case 'molly':
+      return 'meow';
+    case 'mousse':
+      return '...';
+    case 'oscar':
+      return 'MOWWWW';
     default:
-      throw new Error("Bark");
+      throw new Error('Bark');
   }
 };

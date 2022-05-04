@@ -5,12 +5,12 @@
 //
 // TODO: Is there a way to not have to copy/paste this
 //   for every extension?
-declare module "*.jpg" {
+declare module '*.jpg' {
   const url: string;
   export default url;
 }
 
-declare module "*.css" {
+declare module '*.css' {
   const url: string;
   export default url;
 }

@@ -1,21 +1,21 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const FaviconsWebpackPLugin = require("favicons-webpack-plugin");
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPLugin = require('favicons-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   // Bundle for development mode
-  mode: "development",
+  mode: 'development',
   // Dev server options
   devServer: {
     // Automatically open the site when the server launches
-    open: true,
+    open: true
   },
   // Site output options
   output: {
     // Directory in which to output the bundled files
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, 'build'),
     // File to bundle all code into
-    filename: "main.js",
+    filename: 'main.js'
   },
   // Module transpilation configurations
   module: {
@@ -30,14 +30,14 @@ module.exports = {
         //   be replaced with a string containing
         //   the absolute path to that static asset.
         test: /.(jpg|.css)$/,
-        use: "file-loader",
+        use: 'file-loader'
       },
       {
         // Use babel to load all .js files
         test: /.(j|t)s(x?)$/,
-        use: "babel-loader",
-      },
-    ],
+        use: 'babel-loader'
+      }
+    ]
   },
   // Plugin configurations
   plugins: [
@@ -45,15 +45,15 @@ module.exports = {
     //   our code into them.
     new HtmlWebpackPlugin({
       // By default, "template" is used for the root index
-      template: "./src/assets/index.html",
+      template: './src/assets/index.html'
     }),
     // Favicons plugin will serve up the given image as the
     //   site's favicon.
-    new FaviconsWebpackPLugin(path.join(__dirname, "./src/assets/favicon.png")),
+    new FaviconsWebpackPLugin(path.join(__dirname, './src/assets/favicon.png'))
   ],
   // What files to load
   resolve: {
     // Load all files that have the following extensions
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
-  },
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  }
 };

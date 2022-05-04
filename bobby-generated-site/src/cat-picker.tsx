@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { makeCatNoise } from "./make-cat-noise";
+import React, { useState } from 'react';
+import { makeCatNoise } from './make-cat-noise';
 
 /**
  * Collection of buttons that a user can click on to
@@ -7,12 +7,12 @@ import { makeCatNoise } from "./make-cat-noise";
  *   cats make.
  */
 export const CatPicker = () => {
-  const [message, setMessage] = useState("Click a cat to make a cat noise.");
+  const [message, setMessage] = useState('Click a cat to make a cat noise.');
   return (
     <React.Fragment>
       {message}
       <br />
-      {["mousse", "molly", "oscar"].map((cat) => (
+      {['mousse', 'molly', 'oscar'].map((cat) => (
         <button key={cat} onClick={() => setMessage(makeCatNoise(cat))}>
           {cat.toUpperCase()}
         </button>
