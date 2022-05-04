@@ -34,3 +34,9 @@ the suite.
 
 We leverage `babel-jest` to transpile the tests and
 their associated modules.
+
+## Linting the App
+
+Run `yarn lint` to check the code base for style
+violations and other problems. You can also run
+`yarn lint --fix` to auto-repair any simple errors.
